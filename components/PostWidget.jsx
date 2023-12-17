@@ -31,7 +31,7 @@ const PostWidget = ({categories, slug}) => {  //we must pass these two to make s
                         <div className='w-16 flex-none'>
                             <img
                                 className='align-middle rounded-full'
-                                src={post.featuredImage.url}
+                                src={post.featuredImage && post.featuredImage.url}
                                 alt={post.title}
                                 height="60px"
                                 width="60px" />
